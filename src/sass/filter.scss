@@ -1,0 +1,38 @@
+#filter {
+  width: 20%;
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+  background: #f5f5f5;
+  h2 {
+    font-size: 20px;
+    padding-bottom: 10px;
+    font-weight: bold;
+  }
+  h4 {
+    padding-top: 20px;
+    font-weight: bold;
+  }
+}
+
+label {
+  display: block;
+  padding: 10px 0;
+}
+
+.facilitie-label {
+  border-bottom: 1px solid #40514e;
+}
+
+input[type="number"] {
+  width: 45%;
+  display: inline-block;
+  margin-right: 7px;
+}
+
+select {
+  width: 100%;
+}
+
+select {
+  display: block;
+}

@@ -1,0 +1,59 @@
+#listings {
+  width: 100%;
+  padding: 30px;
+  font-family: "Roboto", sans-serif;
+}
+
+.listing-header {
+  display: flex;
+  justify-content: space-between;
+  input[type="text"] {
+    border: none;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+    width: 60%;
+    font-size: 25px;
+    &:focus {
+      outline: none;
+    }
+  }
+  .icons {
+    align-self: center;
+    .fas {
+      padding: 5px;
+      font-size: 25px;
+    }
+  }
+}
+
+.list-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  padding-top: 20px;
+}
+
+.item {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  .image {
+    width: 100%;
+  }
+  .about {
+    padding: 5px;
+    .location {
+      display: inline-block;
+      width: 50%;
+    }
+    .favorite {
+      display: inline-block;
+      width: 50%;
+      text-align: right;
+    }
+    .fas {
+      padding: 5px;
+    }
+    .far {
+      padding: 5px;
+    }
+  }
+}
