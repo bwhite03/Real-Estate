@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "city": "New York",
+    "price": "350,000",
+    "image": "img/listing1.jpeg"
+  },
+  {
+    "id": 2,
+    "city": "Grand Rapids",
+    "price": "400,000",
+    "image": "img/listing2.jpeg"
+  },
+  {
+    "id": 3,
+    "city": "Chicago",
+    "price": "240,000",
+    "image": "img/listing3.jpeg"
+  },
+  {
+    "id": 4,
+    "city": "Moline",
+    "price": "140,000",
+    "image": "img/listing4.jpeg"
+  },
+  {
+    "id": 5,
+    "city": "Chicago",
+    "price": "240,000",
+    "image": "img/listing5.jpeg"
+  },
+  {
+    "id": 6,
+    "city": "Chicago",
+    "price": "240,000",
+    "image": "img/listing6.jpeg"
+  },
+  {
+    "id": 7,
+    "city": "Chicago",
+    "price": "240,000",
+    "image": "img/listing7.jpeg"
+  },
+  {
+    "id": 8,
+    "city": "Chicago",
+    "price": "240,000",
+    "image": "img/listing8.jpeg"
+  },
+  {
+    "id": 9,
+    "city": "Chicago",
+    "price": "240,000",
+    "image": "img/listing9.jpeg"
+  }
+]
