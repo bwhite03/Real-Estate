@@ -5,14 +5,17 @@ const Filter = props => {
     <section id="filter">
       <h2>Filter</h2>
       <label>Price</label>
-      <input type="number" />
-      <input type="number" />
+      <select onChange={props.changePrice}>
+        <option value="100000">100,000+</option>
+        <option value="200000">200,000+</option>
+        <option value="300000">300,000+</option>
+        <option value="400000">400,000+</option>
+      </select>
       <label>Style</label>
-      <select>
+      <select onChange={props.changeStyle}>
         <option value="ranch">Ranch</option>
-        <option value="ranch">Ranch</option>
-        <option value="ranch">Ranch</option>
-        <option value="ranch">Ranch</option>
+        <option value="victorian">Victorian</option>
+        <option value="rustic">Rustic</option>
       </select>
       <label>Bedrooms</label>
       <select onChange={props.changeBedrooms}>

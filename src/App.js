@@ -26,6 +26,16 @@ class App extends Component {
     });
   };
 
+  changePrice = e => {
+    let filtered = this.state.listings.filter(item => {
+      return item.price >= e.target.value;
+    });
+
+    this.setState({
+      filtered
+    });
+  };
+
   changeBedrooms = e => {
     let filtered = this.state.listings.filter(item => {
       return item.bedrooms.indexOf(e.target.value) > -1;
@@ -34,7 +44,16 @@ class App extends Component {
     this.setState({
       filtered
     });
-    console.log(this.state.bedrooms);
+  };
+
+  changeStyle = e => {
+    let filtered = this.state.listings.filter(item => {
+      return item.style.indexOf(e.target.value) > -1;
+    });
+
+    this.setState({
+      filtered
+    });
   };
 
   render() {
@@ -43,8 +62,9 @@ class App extends Component {
         <Header />
         <div className="wrapper">
           <Filter
-            globalState={this.state}
             changeBedrooms={this.changeBedrooms}
+            changeStyle={this.changeStyle}
+            changePrice={this.changePrice}
           />
           <Listing
             listings={
