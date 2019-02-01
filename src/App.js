@@ -11,8 +11,7 @@ class App extends Component {
     super();
     this.state = {
       listings: JSON,
-      filtered: [],
-      bedrooms: "1"
+      filtered: []
     };
   }
 
@@ -28,9 +27,14 @@ class App extends Component {
   };
 
   changeBedrooms = e => {
-    this.setState({
-      bedrooms: e.target.value
+    let filtered = this.state.listings.filter(item => {
+      return item.bedrooms.indexOf(e.target.value) > -1;
     });
+
+    this.setState({
+      filtered
+    });
+    console.log(this.state.bedrooms);
   };
 
   render() {
