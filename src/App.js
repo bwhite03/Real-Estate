@@ -10,17 +10,46 @@ class App extends Component {
   constructor(props) {
     super();
     this.state = {
-      listings: JSON
+      listings: JSON,
+      filtered: [],
+      bedrooms: "1"
     };
   }
+
+  inputChangeHandler = e => {
+    let keyword = e.target.value.toLowerCase().trim();
+    let filtered = this.state.listings.filter(item => {
+      return item.city.indexOf(keyword) > -1;
+    });
+
+    this.setState({
+      filtered
+    });
+  };
+
+  changeBedrooms = e => {
+    this.setState({
+      bedrooms: e.target.value
+    });
+  };
 
   render() {
     return (
       <div className="App">
         <Header />
         <div className="wrapper">
-          <Filter />
-          <Listing listings={this.state.listings} />
+          <Filter
+            globalState={this.state}
+            changeBedrooms={this.changeBedrooms}
+          />
+          <Listing
+            listings={
+              this.state.filtered.length === 0
+                ? this.state.listings
+                : this.state.filtered
+            }
+            inputChangeHandler={this.inputChangeHandler}
+          />
         </div>
       </div>
     );

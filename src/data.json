@@ -1,56 +1,65 @@
 [
   {
     "id": 1,
-    "city": "New York",
+    "city": "new york",
     "price": "350,000",
+    "bedrooms": "3",
     "image": "img/listing1.jpeg"
   },
   {
     "id": 2,
-    "city": "Grand Rapids",
+    "city": "grand rapids",
     "price": "400,000",
+    "bedrooms": "3",
     "image": "img/listing2.jpeg"
   },
   {
     "id": 3,
-    "city": "Chicago",
+    "city": "chicago",
     "price": "240,000",
+    "bedrooms": "4",
     "image": "img/listing3.jpeg"
   },
   {
     "id": 4,
-    "city": "Moline",
+    "city": "moline",
     "price": "140,000",
+    "bedrooms": "1",
     "image": "img/listing4.jpeg"
   },
   {
     "id": 5,
-    "city": "Chicago",
+    "city": "chicago",
     "price": "240,000",
+    "bedrooms": "2",
     "image": "img/listing5.jpeg"
   },
   {
     "id": 6,
-    "city": "Chicago",
+    "city": "chicago",
     "price": "240,000",
+    "bedrooms": "4",
     "image": "img/listing6.jpeg"
   },
   {
     "id": 7,
-    "city": "Chicago",
+    "city": "chicago",
     "price": "240,000",
+    "bedrooms": "1",
     "image": "img/listing7.jpeg"
   },
   {
     "id": 8,
-    "city": "Chicago",
+    "city": "chicago",
     "price": "240,000",
+    "bedrooms": "2",
     "image": "img/listing8.jpeg"
   },
   {
     "id": 9,
-    "city": "Chicago",
+    "city": "chicago",
     "price": "240,000",
+    "bedrooms": "3",
     "image": "img/listing9.jpeg"
   }
 ]

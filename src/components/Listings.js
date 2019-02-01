@@ -4,7 +4,11 @@ const Listings = props => {
   return (
     <section id="listings">
       <div className="listing-header">
-        <input type="text" placeholder="Search" />
+        <input
+          type="text"
+          placeholder="Search"
+          onChange={props.inputChangeHandler}
+        />
         <div className="icons">
           <i className="fas fa-list" />
           <i className="fas fa-th" />
