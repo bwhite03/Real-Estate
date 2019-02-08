@@ -56,6 +56,7 @@ class App extends Component {
     });
   };
 
+<<<<<<< HEAD
   changeFacilities = e => {
     let filtered = this.state.listings.filter(item => {
       return (
@@ -71,6 +72,8 @@ class App extends Component {
     });
   };
 
+=======
+>>>>>>> ddd3fdb95a90cdcf82d6cc8515e027966a013075
   render() {
     return (
       <div className="App">
@@ -80,7 +83,10 @@ class App extends Component {
             changeBedrooms={this.changeBedrooms}
             changeStyle={this.changeStyle}
             changePrice={this.changePrice}
+<<<<<<< HEAD
             changeFacilities={this.changeFacilities}
+=======
+>>>>>>> ddd3fdb95a90cdcf82d6cc8515e027966a013075
           />
           <Listing
             listings={

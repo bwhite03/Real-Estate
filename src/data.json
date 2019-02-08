@@ -4,8 +4,11 @@
     "city": "new york",
     "price": "350000",
     "bedrooms": "3",
+<<<<<<< HEAD
     "garage": "garage",
     "wifi": "wifi",
+=======
+>>>>>>> ddd3fdb95a90cdcf82d6cc8515e027966a013075
     "style": "ranch",
     "image": "img/listing1.jpeg"
   },
@@ -14,8 +17,11 @@
     "city": "grand rapids",
     "price": "400000",
     "bedrooms": "3",
+<<<<<<< HEAD
     "fireplace": "fireplace",
     "wifi": "wifi",
+=======
+>>>>>>> ddd3fdb95a90cdcf82d6cc8515e027966a013075
     "style": "victorian",
     "image": "img/listing2.jpeg"
   },
@@ -25,8 +31,11 @@
     "price": "240000",
     "style": "ranch",
     "bedrooms": "4",
+<<<<<<< HEAD
     "wifi": "wifi",
     "fireplace": "fireplace",
+=======
+>>>>>>> ddd3fdb95a90cdcf82d6cc8515e027966a013075
     "image": "img/listing3.jpeg"
   },
   {
@@ -34,8 +43,11 @@
     "city": "moline",
     "price": "140000",
     "bedrooms": "1",
+<<<<<<< HEAD
     "fireplace": "fireplace",
     "wifi": "wifi",
+=======
+>>>>>>> ddd3fdb95a90cdcf82d6cc8515e027966a013075
     "style": "victorian",
     "image": "img/listing4.jpeg"
   },
@@ -44,7 +56,10 @@
     "city": "chicago",
     "price": "240000",
     "bedrooms": "2",
+<<<<<<< HEAD
     "pool": "pool",
+=======
+>>>>>>> ddd3fdb95a90cdcf82d6cc8515e027966a013075
     "style": "rustic",
     "image": "img/listing5.jpeg"
   },
@@ -53,8 +68,11 @@
     "city": "chicago",
     "price": "240000",
     "bedrooms": "4",
+<<<<<<< HEAD
     "pool": "pool",
     "wifi": "wifi",
+=======
+>>>>>>> ddd3fdb95a90cdcf82d6cc8515e027966a013075
     "style": "victorian",
     "image": "img/listing6.jpeg"
   },
@@ -63,7 +81,10 @@
     "city": "chicago",
     "price": "240000",
     "bedrooms": "1",
+<<<<<<< HEAD
     "pool": "pool",
+=======
+>>>>>>> ddd3fdb95a90cdcf82d6cc8515e027966a013075
     "style": "rustic",
     "image": "img/listing7.jpeg"
   },
@@ -72,8 +93,11 @@
     "city": "chicago",
     "price": "240000",
     "bedrooms": "2",
+<<<<<<< HEAD
     "garage": "garage",
     "wifi": "wifi",
+=======
+>>>>>>> ddd3fdb95a90cdcf82d6cc8515e027966a013075
     "style": "ranch",
     "image": "img/listing8.jpeg"
   },
@@ -82,8 +106,11 @@
     "city": "chicago",
     "price": "240000",
     "bedrooms": "3",
+<<<<<<< HEAD
     "garage": "garage",
     "wifi": "wifi",
+=======
+>>>>>>> ddd3fdb95a90cdcf82d6cc8515e027966a013075
     "style": "victorian",
     "image": "img/listing9.jpeg"
   }
