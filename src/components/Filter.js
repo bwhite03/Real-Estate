@@ -26,41 +26,6 @@ const Filter = props => {
       </select>
       <h4>Facilities</h4>
       <label className="facilitie-label">
-<<<<<<< HEAD
-        <input
-          onChange={props.changeFacilities}
-          type="checkbox"
-          name="garage"
-          value="garage"
-        />
-        Garage
-      </label>
-      <label className="facilitie-label">
-        <input
-          onChange={props.changeFacilities}
-          type="checkbox"
-          name="fireplace"
-          value="fireplace"
-        />
-        Fireplace
-      </label>
-      <label className="facilitie-label">
-        <input
-          onChange={props.changeFacilities}
-          type="checkbox"
-          name="wifi"
-          value="wifi"
-        />
-        Wifi
-      </label>
-      <label className="facilitie-label">
-        <input
-          onChange={props.changeFacilities}
-          type="checkbox"
-          name="pool"
-          value="pool"
-        />
-=======
         <input type="checkbox" name="elevator" value="elevator" />
         Elevator
       </label>
@@ -74,7 +39,6 @@ const Filter = props => {
       </label>
       <label className="facilitie-label">
         <input type="checkbox" name="pool" value="pool" />
->>>>>>> ddd3fdb95a90cdcf82d6cc8515e027966a013075
         Pool
       </label>
     </section>
