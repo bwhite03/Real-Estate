@@ -11,7 +11,7 @@ class App extends Component {
     super();
     this.state = {
       listings: JSON,
-      filtered: []
+      filtered: JSON
     };
   }
 
@@ -27,32 +27,49 @@ class App extends Component {
   };
 
   changePrice = e => {
-    let filtered = this.state.listings.filter(item => {
-      return item.price >= e.target.value;
-    });
+    if (this.state.filtered.length === 0) {
+      var newData = this.state.listings.filter(item => {
+        return item.price >= e.target.value;
+      });
+    } else {
+      newData = this.state.filtered.filter(item => {
+        return item.price >= e.target.value;
+      });
+    }
 
     this.setState({
-      filtered
+      filtered: newData
     });
   };
 
   changeBedrooms = e => {
-    let filtered = this.state.listings.filter(item => {
-      return item.bedrooms.indexOf(e.target.value) > -1;
-    });
+    if (this.state.filtered.length === 0) {
+      var newData = this.state.listings.filter(item => {
+        return item.bedrooms.indexOf(e.target.value) > -1;
+      });
+    } else {
+      newData = this.state.filtered.filter(item => {
+        return item.bedrooms.indexOf(e.target.value) > -1;
+      });
+    }
 
     this.setState({
-      filtered
+      filtered: newData
     });
   };
 
   changeStyle = e => {
-    let filtered = this.state.listings.filter(item => {
-      return item.style.indexOf(e.target.value) > -1;
-    });
-
+    if (this.state.filtered.length === 0) {
+      var newData = this.state.listings.filter(item => {
+        return item.style.indexOf(e.target.value) > -1;
+      });
+    } else {
+      newData = this.state.filtered.filter(item => {
+        return item.style.indexOf(e.target.value) > -1;
+      });
+    }
     this.setState({
-      filtered
+      filtered: newData
     });
   };
 
@@ -83,11 +100,7 @@ class App extends Component {
             changeFacilities={this.changeFacilities}
           />
           <Listing
-            listings={
-              this.state.filtered.length === 0
-                ? this.state.listings
-                : this.state.filtered
-            }
+            listings={this.state.filtered}
             inputChangeHandler={this.inputChangeHandler}
           />
         </div>
