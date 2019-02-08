@@ -1,0 +1,31 @@
+#nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 50px;
+  background: #2f89fc;
+}
+
+.logo {
+  align-self: center;
+  h1 {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    margin: 0;
+  }
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  li {
+    display: inline-block;
+    margin-left: 15px;
+    font-family: "Roboto", sans-serif;
+    color: white;
+  }
+  .register {
+    background: #40514e;
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+}

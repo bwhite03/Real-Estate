@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import "./sass/reset.scss";
+@import "./sass/header.scss";
+@import "./sass/filter.scss";
+@import "./sass/listings.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+}

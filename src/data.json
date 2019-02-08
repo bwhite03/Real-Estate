@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "city": "new york",
+    "price": "350000",
+    "bedrooms": "3",
+    "garage": "garage",
+    "wifi": "wifi",
+    "style": "ranch",
+    "image": "img/listing1.jpeg"
+  },
+  {
+    "id": 2,
+    "city": "grand rapids",
+    "price": "400000",
+    "bedrooms": "3",
+    "fireplace": "fireplace",
+    "wifi": "wifi",
+    "style": "victorian",
+    "image": "img/listing2.jpeg"
+  },
+  {
+    "id": 3,
+    "city": "chicago",
+    "price": "240000",
+    "style": "ranch",
+    "bedrooms": "4",
+    "wifi": "wifi",
+    "fireplace": "fireplace",
+    "image": "img/listing3.jpeg"
+  },
+  {
+    "id": 4,
+    "city": "moline",
+    "price": "140000",
+    "bedrooms": "1",
+    "fireplace": "fireplace",
+    "wifi": "wifi",
+    "style": "victorian",
+    "image": "img/listing4.jpeg"
+  },
+  {
+    "id": 5,
+    "city": "chicago",
+    "price": "240000",
+    "bedrooms": "2",
+    "pool": "pool",
+    "style": "rustic",
+    "image": "img/listing5.jpeg"
+  },
+  {
+    "id": 6,
+    "city": "chicago",
+    "price": "240000",
+    "bedrooms": "4",
+    "pool": "pool",
+    "wifi": "wifi",
+    "style": "victorian",
+    "image": "img/listing6.jpeg"
+  },
+  {
+    "id": 7,
+    "city": "chicago",
+    "price": "240000",
+    "bedrooms": "1",
+    "pool": "pool",
+    "style": "rustic",
+    "image": "img/listing7.jpeg"
+  },
+  {
+    "id": 8,
+    "city": "chicago",
+    "price": "240000",
+    "bedrooms": "2",
+    "garage": "garage",
+    "wifi": "wifi",
+    "style": "ranch",
+    "image": "img/listing8.jpeg"
+  },
+  {
+    "id": 9,
+    "city": "chicago",
+    "price": "240000",
+    "bedrooms": "3",
+    "garage": "garage",
+    "wifi": "wifi",
+    "style": "victorian",
+    "image": "img/listing9.jpeg"
+  }
+]
