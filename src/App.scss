@@ -11,3 +11,9 @@
 .wrapper {
   display: flex;
 }
+
+@media (max-width: 500px) {
+  .wrapper {
+    flex-direction: column;
+  }
+}

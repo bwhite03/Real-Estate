@@ -36,3 +36,9 @@ select {
 select {
   display: block;
 }
+
+@media (max-width: 500px) {
+  #filter {
+    width: 100%;
+  }
+}

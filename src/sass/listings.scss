@@ -61,6 +61,18 @@
   }
 }
 
+@media (max-width: 900px) {
+  .list-items {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .list-items {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 @media (max-width: 500px) {
   .list-items {
     grid-template-columns: 1fr;
