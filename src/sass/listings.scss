@@ -60,3 +60,9 @@
     }
   }
 }
+
+@media (max-width: 500px) {
+  .list-items {
+    grid-template-columns: 1fr;
+  }
+}

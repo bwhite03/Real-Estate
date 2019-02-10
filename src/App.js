@@ -74,17 +74,28 @@ class App extends Component {
   };
 
   changeFacilities = e => {
-    let filtered = this.state.listings.filter(item => {
-      return (
-        item.garage === e.target.value ||
-        item.fireplace === e.target.value ||
-        item.wifi === e.target.value ||
-        item.pool === e.target.value
-      );
-    });
+    if (this.state.filtered.length === 0) {
+      var newData = this.state.listings.filter(item => {
+        return (
+          item.garage === e.target.value ||
+          item.fireplace === e.target.value ||
+          item.wifi === e.target.value ||
+          item.pool === e.target.value
+        );
+      });
+    } else {
+      newData = this.state.filtered.filter(item => {
+        return (
+          item.garage === e.target.value ||
+          item.fireplace === e.target.value ||
+          item.wifi === e.target.value ||
+          item.pool === e.target.value
+        );
+      });
+    }
 
     this.setState({
-      filtered
+      filtered: newData
     });
   };
 

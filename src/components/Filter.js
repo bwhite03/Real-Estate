@@ -6,6 +6,9 @@ const Filter = props => {
       <h2>Filter</h2>
       <label>Price</label>
       <select onChange={props.changePrice}>
+        <option value="all" selected>
+          All
+        </option>
         <option value="100000">100,000+</option>
         <option value="200000">200,000+</option>
         <option value="300000">300,000+</option>
@@ -13,12 +16,18 @@ const Filter = props => {
       </select>
       <label>Style</label>
       <select onChange={props.changeStyle}>
+        <option value="" selected>
+          All
+        </option>
         <option value="ranch">Ranch</option>
         <option value="victorian">Victorian</option>
         <option value="rustic">Rustic</option>
       </select>
       <label>Bedrooms</label>
       <select onChange={props.changeBedrooms}>
+        <option value="" selected>
+          All
+        </option>
         <option value="1">One</option>
         <option value="2">Two</option>
         <option value="3">Three</option>

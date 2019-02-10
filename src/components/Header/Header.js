@@ -12,6 +12,7 @@ const Header = () => {
         <li>Login</li>
         <li className="register">Register</li>
       </ul>
+      <i class="fas fa-bars" />
     </nav>
   );
 };
