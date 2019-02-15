@@ -27,14 +27,18 @@ class App extends Component {
   };
 
   changePrice = e => {
-    if (this.state.filtered.length === 0) {
-      var newData = this.state.listings.filter(item => {
-        return item.price >= e.target.value;
-      });
+    if (e.target.value !== "all") {
+      if (this.state.filtered.length === 0) {
+        var newData = this.state.listings.filter(item => {
+          return item.price >= e.target.value;
+        });
+      } else {
+        newData = this.state.filtered.filter(item => {
+          return item.price >= e.target.value;
+        });
+      }
     } else {
-      newData = this.state.filtered.filter(item => {
-        return item.price >= e.target.value;
-      });
+      newData = this.state.listings;
     }
 
     this.setState({
@@ -43,14 +47,18 @@ class App extends Component {
   };
 
   changeBedrooms = e => {
-    if (this.state.filtered.length === 0) {
-      var newData = this.state.listings.filter(item => {
-        return item.bedrooms.indexOf(e.target.value) > -1;
-      });
+    if (e.target.value !== "all") {
+      if (this.state.filtered.length === 0) {
+        var newData = this.state.listings.filter(item => {
+          return item.bedrooms.indexOf(e.target.value) > -1;
+        });
+      } else {
+        newData = this.state.filtered.filter(item => {
+          return item.bedrooms.indexOf(e.target.value) > -1;
+        });
+      }
     } else {
-      newData = this.state.filtered.filter(item => {
-        return item.bedrooms.indexOf(e.target.value) > -1;
-      });
+      newData = this.state.listings;
     }
 
     this.setState({
@@ -59,15 +67,20 @@ class App extends Component {
   };
 
   changeStyle = e => {
-    if (this.state.filtered.length === 0) {
-      var newData = this.state.listings.filter(item => {
-        return item.style.indexOf(e.target.value) > -1;
-      });
+    if (e.target.value !== "all") {
+      if (this.state.filtered.length === 0) {
+        var newData = this.state.listings.filter(item => {
+          return item.style.indexOf(e.target.value) > -1;
+        });
+      } else {
+        newData = this.state.filtered.filter(item => {
+          return item.style.indexOf(e.target.value) > -1;
+        });
+      }
     } else {
-      newData = this.state.filtered.filter(item => {
-        return item.style.indexOf(e.target.value) > -1;
-      });
+      newData = this.state.listings;
     }
+
     this.setState({
       filtered: newData
     });

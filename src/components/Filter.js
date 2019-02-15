@@ -16,7 +16,7 @@ const Filter = props => {
       </select>
       <label>Style</label>
       <select onChange={props.changeStyle}>
-        <option value="" selected>
+        <option value="all" selected>
           All
         </option>
         <option value="ranch">Ranch</option>
@@ -25,7 +25,7 @@ const Filter = props => {
       </select>
       <label>Bedrooms</label>
       <select onChange={props.changeBedrooms}>
-        <option value="" selected>
+        <option value="all" selected>
           All
         </option>
         <option value="1">One</option>
