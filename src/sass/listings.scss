@@ -1,7 +1,8 @@
 #listings {
   width: 100%;
-  padding: 30px;
+  padding: 30px 40px;
   font-family: "Roboto", sans-serif;
+  overflow: auto;
 }
 
 .listing-header {
@@ -61,19 +62,19 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1400px) {
   .list-items {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
   .list-items {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .list-items {
     grid-template-columns: 1fr;
   }

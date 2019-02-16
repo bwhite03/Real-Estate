@@ -5,6 +5,7 @@ import JSON from "./data.json";
 import Header from "./components/Header/Header";
 import Filter from "./components/Filter";
 import Listing from "./components/Listings";
+import Footer from "./components/Footer";
 
 class App extends Component {
   constructor(props) {
@@ -128,6 +129,7 @@ class App extends Component {
             inputChangeHandler={this.inputChangeHandler}
           />
         </div>
+        <Footer />
       </div>
     );
   }

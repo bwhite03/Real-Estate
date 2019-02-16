@@ -3,16 +3,28 @@
 @import "./sass/header.scss";
 @import "./sass/filter.scss";
 @import "./sass/listings.scss";
+@import "./sass/footer.scss";
 
 * {
   box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 150px;
+  min-height: 100%;
 }
 
 .wrapper {
   display: flex;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .wrapper {
     flex-direction: column;
   }
