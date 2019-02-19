@@ -1,10 +1,51 @@
 #footer {
+  display: flex;
+  justify-content: space-between;
   background: #2f89fc;
-  height: 150px;
+  height: 200px;
   position: absolute;
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 1rem;
-  overflow: auto;
+  padding: 30px 60px;
+  font-family: "Roboto", sans-serif;
+}
+
+.footerLogo {
+  align-self: center;
+  text-align: center;
+  color: white;
+}
+
+.footerwrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact {
+  align-self: center;
+  margin-left: 50px;
+  h1 {
+    color: white;
+    font-weight: bold;
+  }
+  a {
+    display: block;
+    padding-top: 5px;
+    text-decoration: none;
+    color: white;
+  }
+  ul {
+    display: flex;
+    justify-content: space-between;
+    li {
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
+@media (max-width: 600px) {
+  #footer {
+    padding: 30px;
+  }
 }
