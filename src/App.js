@@ -12,7 +12,8 @@ class App extends Component {
     super();
     this.state = {
       listings: JSON,
-      filtered: JSON
+      filtered: JSON,
+      active: false
     };
   }
 
@@ -113,6 +114,12 @@ class App extends Component {
     });
   };
 
+  toggleActive = () => {
+    this.setState({
+      active: !this.state.active
+    });
+  };
+
   render() {
     return (
       <div className="App">
@@ -127,6 +134,8 @@ class App extends Component {
           <Listing
             listings={this.state.filtered}
             inputChangeHandler={this.inputChangeHandler}
+            toggleActive={this.toggleActive}
+            globalState={this.state}
           />
         </div>
         <Footer />

@@ -10,11 +10,15 @@ const Listings = props => {
           onChange={props.inputChangeHandler}
         />
         <div className="icons">
-          <i className="fas fa-list" />
+          <i onClick={props.toggleActive} className="fas fa-list" />
           <i className="fas fa-th" />
         </div>
       </div>
-      <div className="list-items">
+      <div
+        className={
+          props.globalState.active ? "list-items-active" : "list-items"
+        }
+      >
         {props.listings.length === 0 ? (
           <h1>no match</h1>
         ) : (

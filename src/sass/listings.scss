@@ -34,6 +34,13 @@
   padding-top: 20px;
 }
 
+.list-items-active {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  padding-top: 20px;
+}
+
 .item {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   .image {
@@ -65,6 +72,15 @@
 @media (max-width: 1400px) {
   .list-items {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1100px) {
+  .list-items-active {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    padding-top: 20px;
   }
 }
 
