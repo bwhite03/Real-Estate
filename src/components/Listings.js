@@ -11,7 +11,7 @@ const Listings = props => {
         />
         <div className="icons">
           <i onClick={props.toggleActive} className="fas fa-list" />
-          <i className="fas fa-th" />
+          <i onClick={props.toggleFalse} className="fas fa-th" />
         </div>
       </div>
       <div

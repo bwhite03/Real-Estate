@@ -116,7 +116,13 @@ class App extends Component {
 
   toggleActive = () => {
     this.setState({
-      active: !this.state.active
+      active: true
+    });
+  };
+
+  toggleFalse = () => {
+    this.setState({
+      active: false
     });
   };
 
@@ -135,6 +141,7 @@ class App extends Component {
             listings={this.state.filtered}
             inputChangeHandler={this.inputChangeHandler}
             toggleActive={this.toggleActive}
+            toggleFalse={this.toggleFalse}
             globalState={this.state}
           />
         </div>
