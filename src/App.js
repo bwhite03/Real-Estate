@@ -8,7 +8,7 @@ import Listing from "./components/Listings";
 import Footer from "./components/Footer";
 
 class App extends Component {
-  constructor(props) {
+  constructor() {
     super();
     this.state = {
       listings: JSON,

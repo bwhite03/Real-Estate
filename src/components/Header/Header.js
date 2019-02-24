@@ -8,7 +8,6 @@ const Header = () => {
       </div>
       <ul>
         <li>About Us</li>
-        <li>Agents</li>
         <li>Login</li>
         <li className="register">Register</li>
       </ul>

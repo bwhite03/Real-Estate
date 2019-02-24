@@ -10,8 +10,20 @@ const Listings = props => {
           onChange={props.inputChangeHandler}
         />
         <div className="icons">
-          <i onClick={props.toggleActive} className="fas fa-list" />
-          <i onClick={props.toggleFalse} className="fas fa-th" />
+          <i
+            onClick={props.toggleActive}
+            className={
+              props.globalState.active
+                ? "fas fa-list active-view"
+                : "fas fa-list"
+            }
+          />
+          <i
+            onClick={props.toggleFalse}
+            className={
+              props.globalState.active ? "fas fa-th" : "fas fa-th active-view"
+            }
+          />
         </div>
       </div>
       <div
