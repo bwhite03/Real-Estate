@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import "normalize.css/normalize.css";
-import "./App.scss";
-import JSON from "./data.json";
-import Header from "./components/Header/Header";
-import Filter from "./components/Filter";
-import Listing from "./components/Listings";
-import Footer from "./components/Footer";
+import "../App.scss";
+import JSON from "../data.json";
+import Header from "./Header/Header";
+import Filter from "./Filter";
+import Listing from "./Listings";
+import Footer from "./Footer";
 
-class App extends Component {
+class Home extends Component {
   constructor() {
     super();
     this.state = {
@@ -128,7 +128,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="Home">
         <Header />
         <div className="wrapper">
           <Filter
@@ -151,4 +151,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Home;
