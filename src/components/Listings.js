@@ -6,7 +6,7 @@ const Listings = props => {
       <div className="listing-header">
         <input
           type="text"
-          placeholder="Search"
+          placeholder="Search City"
           onChange={props.inputChangeHandler}
         />
         <div className="icons">
