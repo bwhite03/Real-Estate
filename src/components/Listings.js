@@ -37,7 +37,7 @@ const Listings = props => {
           props.listings.map(item => {
             return (
               <div className="item">
-                <img src={item.image} className="image" />
+                <img src={item.image} className="image" alt="house" />
                 <div className="about">
                   <div className="price">
                     <i className="fas fa-dollar-sign" />

@@ -3,35 +3,46 @@ import React from "react";
 const Footer = () => {
   return (
     <footer id="footer">
-      <h1 className="footerLogo">Logo</h1>
-
-      <div className="contact">
-        <h1>Contact</h1>
-        <a href="#">info@email.com</a>
-        <a href="#">333-333-3333</a>
-        <ul>
-          <li>
-            <a href="#">
-              <i class="fab fa-facebook-square" />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fab fa-twitter-square" />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fab fa-google-plus-square" />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fab fa-tumblr-square" />
-            </a>
-          </li>
-        </ul>
-      </div>
+      <ul className="footer-icons">
+        <li>
+          <a href="#">
+            <i class="fab fa-facebook-f" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fab fa-twitter" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fab fa-instagram" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fab fa-google" />
+          </a>
+        </li>
+      </ul>
+      <h1 className="footer-logo">Logo</h1>
+      <ul className="contact">
+        <li>
+          <a href="#">
+            <i class="far fa-envelope" /> Email
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fas fa-phone-volume" /> 555-555-5555
+          </a>
+        </li>
+      </ul>
+      <p>
+        Branch Out Realty Somerville Ave,
+        <br />
+        Somerville, MA 02143
+      </p>
     </footer>
   );
 };
