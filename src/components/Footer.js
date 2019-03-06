@@ -5,22 +5,25 @@ const Footer = () => {
     <footer id="footer">
       <ul className="footer-icons">
         <li>
-          <a href="#">
+          <a href="https://www.facebook.com/" target="_blank">
             <i class="fab fa-facebook-f" />
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="https://twitter.com/?lang=en" target="_blank">
             <i class="fab fa-twitter" />
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="https://www.instagram.com/?hl=en" target="_blank">
             <i class="fab fa-instagram" />
           </a>
         </li>
         <li>
-          <a href="#">
+          <a
+            href="https://aboutme.google.com/u/0/?referer=gplus"
+            target="_blank"
+          >
             <i class="fab fa-google" />
           </a>
         </li>
