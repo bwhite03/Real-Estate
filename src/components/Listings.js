@@ -39,16 +39,28 @@ const Listings = props => {
               <div className="item">
                 <img src={item.image} className="image" alt="house" />
                 <div className="about">
-                  <div className="price">
-                    <i className="fas fa-dollar-sign" />
-                    <span>{item.price}</span>
+                  <div>
+                    <div className="price">
+                      <i className="fas fa-dollar-sign" />
+                      <span>{item.price}</span>
+                    </div>
+                    <div className="style">
+                      <i class="fas fa-home" />
+                      <span>{item.style}</span>
+                    </div>
                   </div>
-                  <div className="location">
-                    <i className="fas fa-map-marker-alt" />
-                    <span>{item.city}</span>
-                  </div>
-                  <div className="favorite">
-                    <i className="far fa-heart" />
+                  <div>
+                    <div className="location">
+                      <i className="fas fa-map-marker-alt" />
+                      <span>{item.city}</span>
+                    </div>
+                    <div className="bedrooms">
+                      <i class="fas fa-bed" />
+                      <span>{item.bedrooms}</span>
+                    </div>
+                    <div className="favorite">
+                      <i className="far fa-heart" />
+                    </div>
                   </div>
                 </div>
               </div>

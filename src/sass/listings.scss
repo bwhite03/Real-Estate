@@ -53,14 +53,22 @@
   }
   .about {
     padding: 5px;
+    .price {
+      display: inline-block;
+      width: 130px;
+    }
+    .style {
+      display: inline-block;
+    }
     .location {
       display: inline-block;
-      width: 80%;
+      width: 130px;
+    }
+    .bedrooms {
+      display: inline-block;
     }
     .favorite {
-      display: inline-block;
-      width: 20%;
-      text-align: right;
+      float: right;
     }
     .fas {
       padding: 5px;
@@ -71,8 +79,6 @@
     span {
       text-transform: capitalize;
     }
-  }
-  &:hover {
   }
 }
 
