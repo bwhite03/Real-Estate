@@ -5,8 +5,8 @@ const Filter = props => {
     <section id="filter">
       <h2>Filter</h2>
       <label>Price</label>
-      <select onChange={props.changePrice}>
-        <option value="all" selected>
+      <select onChange={props.filter}>
+        <option value="all" defaultValue>
           All
         </option>
         <option value="100000">100,000+</option>
@@ -15,8 +15,8 @@ const Filter = props => {
         <option value="400000">400,000+</option>
       </select>
       <label>Style</label>
-      <select onChange={props.changeStyle}>
-        <option value="all" selected>
+      <select onChange={props.filter}>
+        <option value="all" defaultValue>
           All
         </option>
         <option value="ranch">Ranch</option>
@@ -24,16 +24,25 @@ const Filter = props => {
         <option value="rustic">Rustic</option>
       </select>
       <label>Bedrooms</label>
-      <select onChange={props.changeBedrooms}>
-        <option value="all" selected>
+      <select onChange={props.filter}>
+        <option value="all" defaultValue>
           All
         </option>
-        <option value="1">One</option>
-        <option value="2">Two</option>
-        <option value="3">Three</option>
-        <option value="4">Four</option>
+        <option value="one">One</option>
+        <option value="two">Two</option>
+        <option value="three">Three</option>
+        <option value="four">Four</option>
       </select>
       <h4>Facilities</h4>
+      <label className="facilitie-label">
+        <input
+          onChange={props.changeFacilities}
+          type="checkbox"
+          name="garage"
+          value="all"
+        />
+        All
+      </label>
       <label className="facilitie-label">
         <input
           onChange={props.changeFacilities}

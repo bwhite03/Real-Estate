@@ -11,8 +11,8 @@ class Home extends Component {
   constructor() {
     super();
     this.state = {
-      listings: JSON,
       filtered: JSON,
+      listings: JSON,
       active: false
     };
   }
@@ -28,57 +28,16 @@ class Home extends Component {
     });
   };
 
-  changePrice = e => {
+  filter = e => {
+    let newData;
     if (e.target.value !== "all") {
-      if (this.state.filtered.length === 0) {
-        var newData = this.state.listings.filter(item => {
-          return item.price >= e.target.value;
-        });
-      } else {
-        newData = this.state.filtered.filter(item => {
-          return item.price >= e.target.value;
-        });
-      }
-    } else {
-      newData = this.state.listings;
-    }
-
-    this.setState({
-      filtered: newData
-    });
-  };
-
-  changeBedrooms = e => {
-    if (e.target.value !== "all") {
-      if (this.state.filtered.length === 0) {
-        var newData = this.state.listings.filter(item => {
-          return item.bedrooms.indexOf(e.target.value) > -1;
-        });
-      } else {
-        newData = this.state.filtered.filter(item => {
-          return item.bedrooms.indexOf(e.target.value) > -1;
-        });
-      }
-    } else {
-      newData = this.state.listings;
-    }
-
-    this.setState({
-      filtered: newData
-    });
-  };
-
-  changeStyle = e => {
-    if (e.target.value !== "all") {
-      if (this.state.filtered.length === 0) {
-        var newData = this.state.listings.filter(item => {
-          return item.style.indexOf(e.target.value) > -1;
-        });
-      } else {
-        newData = this.state.filtered.filter(item => {
-          return item.style.indexOf(e.target.value) > -1;
-        });
-      }
+      newData = this.state.filtered.filter(item => {
+        return (
+          item.price >= e.target.value ||
+          item.bedrooms === e.target.value ||
+          item.style === e.target.value
+        );
+      });
     } else {
       newData = this.state.listings;
     }
@@ -89,8 +48,8 @@ class Home extends Component {
   };
 
   changeFacilities = e => {
-    if (this.state.filtered.length === 0) {
-      var newData = this.state.listings.filter(item => {
+    if (e.target.value !== "all") {
+      var newData = this.state.filtered.filter(item => {
         return (
           item.garage === e.target.value ||
           item.fireplace === e.target.value ||
@@ -99,14 +58,7 @@ class Home extends Component {
         );
       });
     } else {
-      newData = this.state.filtered.filter(item => {
-        return (
-          item.garage === e.target.value ||
-          item.fireplace === e.target.value ||
-          item.wifi === e.target.value ||
-          item.pool === e.target.value
-        );
-      });
+      newData = this.state.listings;
     }
 
     this.setState({
@@ -132,9 +84,7 @@ class Home extends Component {
         <Header />
         <div className="wrapper">
           <Filter
-            changeBedrooms={this.changeBedrooms}
-            changeStyle={this.changeStyle}
-            changePrice={this.changePrice}
+            filter={this.filter}
             changeFacilities={this.changeFacilities}
           />
           <Listing

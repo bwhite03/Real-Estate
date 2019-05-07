@@ -34,9 +34,9 @@ const Listings = props => {
         {props.listings.length === 0 ? (
           <h1>no match</h1>
         ) : (
-          props.listings.map(item => {
+          props.listings.map((item, index) => {
             return (
-              <div className="item">
+              <div className="item" key={index}>
                 <img src={item.image} className="image" alt="house" />
                 <div className="about">
                   <div>
@@ -45,7 +45,7 @@ const Listings = props => {
                       <span>{item.price}</span>
                     </div>
                     <div className="style">
-                      <i class="fas fa-home" />
+                      <i className="fas fa-home" />
                       <span>{item.style}</span>
                     </div>
                   </div>
@@ -55,7 +55,7 @@ const Listings = props => {
                       <span>{item.city}</span>
                     </div>
                     <div className="bedrooms">
-                      <i class="fas fa-bed" />
+                      <i className="fas fa-bed" />
                       <span>{item.bedrooms}</span>
                     </div>
                     <div className="favorite">
