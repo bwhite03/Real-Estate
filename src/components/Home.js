@@ -4,7 +4,7 @@ import "../App.scss";
 import JSON from "../data.json";
 import Header from "./Header/Header";
 import Filter from "./Filter";
-import Listing from "./Listings";
+import Listing from "./listings/Listings";
 import Footer from "./Footer";
 
 class Home extends Component {
