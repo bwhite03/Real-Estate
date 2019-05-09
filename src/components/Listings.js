@@ -36,7 +36,7 @@ const Listings = props => {
           <h1>No match</h1>
         ) : (
           props.listings.map((item, index) => {
-            return <Listing item={item} index={index} />;
+            return <Listing item={item} key={index} />;
           })
         )}
       </div>
