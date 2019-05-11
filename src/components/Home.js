@@ -13,7 +13,10 @@ class Home extends Component {
     this.state = {
       filtered: JSON,
       listings: JSON,
-      active: false
+      active: false,
+      price: "all",
+      bedrooms: "all",
+      style: "all"
     };
   }
 
@@ -28,18 +31,26 @@ class Home extends Component {
     });
   };
 
-  filter = e => {
-    let newData;
-    if (e.target.value !== "all") {
-      newData = this.state.filtered.filter(item => {
-        return (
-          item.price >= e.target.value ||
-          item.bedrooms === e.target.value ||
-          item.style === e.target.value
-        );
-      });
-    } else {
-      newData = this.state.listings;
+  change = e => {
+    const name = e.target.name;
+    this.setState({
+      [name]: e.target.value
+    });
+  };
+
+  filter = () => {
+    let newData = this.state.listings;
+
+    if (this.state.price !== "all") {
+      newData = newData.filter(item => item.price >= this.state.price);
+    }
+
+    if (this.state.style !== "all") {
+      newData = newData.filter(item => item.style === this.state.style);
+    }
+
+    if (this.state.bedrooms !== "all") {
+      newData = newData.filter(item => item.bedrooms === this.state.bedrooms);
     }
 
     this.setState({
@@ -86,6 +97,7 @@ class Home extends Component {
           <Filter
             filter={this.filter}
             changeFacilities={this.changeFacilities}
+            change={this.change}
           />
           <Listing
             listings={this.state.filtered}

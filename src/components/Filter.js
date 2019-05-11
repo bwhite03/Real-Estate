@@ -5,7 +5,7 @@ const Filter = props => {
     <section id="filter">
       <h2>Filter</h2>
       <label>Price</label>
-      <select onChange={props.filter}>
+      <select onChange={props.change} name="price">
         <option value="all" defaultValue>
           All
         </option>
@@ -15,7 +15,7 @@ const Filter = props => {
         <option value="400000">400,000+</option>
       </select>
       <label>Style</label>
-      <select onChange={props.filter}>
+      <select onChange={props.change} name="style">
         <option value="all" defaultValue>
           All
         </option>
@@ -24,7 +24,7 @@ const Filter = props => {
         <option value="rustic">Rustic</option>
       </select>
       <label>Bedrooms</label>
-      <select onChange={props.filter}>
+      <select onChange={props.change} name="bedrooms">
         <option value="all" defaultValue>
           All
         </option>
@@ -79,6 +79,7 @@ const Filter = props => {
         />
         Pool
       </label>
+      <button onClick={props.filter}>Search</button>
     </section>
   );
 };
