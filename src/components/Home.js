@@ -16,7 +16,11 @@ class Home extends Component {
       active: false,
       price: "all",
       bedrooms: "all",
-      style: "all"
+      style: "all",
+      garage: false,
+      fireplace: false,
+      wifi: false,
+      pool: false
     };
   }
 
@@ -33,8 +37,10 @@ class Home extends Component {
 
   change = e => {
     const name = e.target.name;
+    const value =
+      e.target.type === "checkbox" ? e.target.checked : e.target.value;
     this.setState({
-      [name]: e.target.value
+      [name]: value
     });
   };
 
@@ -53,23 +59,20 @@ class Home extends Component {
       newData = newData.filter(item => item.bedrooms === this.state.bedrooms);
     }
 
-    this.setState({
-      filtered: newData
-    });
-  };
+    if (this.state.garage !== false) {
+      newData = newData.filter(item => item.garage);
+    }
 
-  changeFacilities = e => {
-    if (e.target.value !== "all") {
-      var newData = this.state.filtered.filter(item => {
-        return (
-          item.garage === e.target.value ||
-          item.fireplace === e.target.value ||
-          item.wifi === e.target.value ||
-          item.pool === e.target.value
-        );
-      });
-    } else {
-      newData = this.state.listings;
+    if (this.state.fireplace !== false) {
+      newData = newData.filter(item => item.fireplace);
+    }
+
+    if (this.state.wifi !== false) {
+      newData = newData.filter(item => item.wifi);
+    }
+
+    if (this.state.pool !== false) {
+      newData = newData.filter(item => item.pool);
     }
 
     this.setState({
@@ -94,11 +97,7 @@ class Home extends Component {
       <div className="Home">
         <Header />
         <div className="wrapper">
-          <Filter
-            filter={this.filter}
-            changeFacilities={this.changeFacilities}
-            change={this.change}
-          />
+          <Filter filter={this.filter} change={this.change} />
           <Listing
             listings={this.state.filtered}
             inputChangeHandler={this.inputChangeHandler}

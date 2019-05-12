@@ -36,16 +36,7 @@ const Filter = props => {
       <h4>Facilities</h4>
       <label className="facilitie-label">
         <input
-          onChange={props.changeFacilities}
-          type="checkbox"
-          name="garage"
-          value="all"
-        />
-        All
-      </label>
-      <label className="facilitie-label">
-        <input
-          onChange={props.changeFacilities}
+          onChange={props.change}
           type="checkbox"
           name="garage"
           value="garage"
@@ -54,7 +45,7 @@ const Filter = props => {
       </label>
       <label className="facilitie-label">
         <input
-          onChange={props.changeFacilities}
+          onChange={props.change}
           type="checkbox"
           name="fireplace"
           value="fireplace"
@@ -63,7 +54,7 @@ const Filter = props => {
       </label>
       <label className="facilitie-label">
         <input
-          onChange={props.changeFacilities}
+          onChange={props.change}
           type="checkbox"
           name="wifi"
           value="wifi"
@@ -72,7 +63,7 @@ const Filter = props => {
       </label>
       <label className="facilitie-label">
         <input
-          onChange={props.changeFacilities}
+          onChange={props.change}
           type="checkbox"
           name="pool"
           value="pool"
