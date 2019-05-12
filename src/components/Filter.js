@@ -79,7 +79,9 @@ const Filter = props => {
         />
         Pool
       </label>
-      <button onClick={props.filter}>Search</button>
+      <button className="search" onClick={props.filter}>
+        Search
+      </button>
     </section>
   );
 };
