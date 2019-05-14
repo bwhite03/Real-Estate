@@ -2,10 +2,8 @@ import React, { Component } from "react";
 import "normalize.css/normalize.css";
 import "../App.scss";
 import JSON from "../data.json";
-import Header from "./Header/Header";
 import Filter from "./Filter";
 import Listing from "./listings/Listings";
-import Footer from "./Footer";
 
 class Home extends Component {
   constructor() {
@@ -95,7 +93,6 @@ class Home extends Component {
   render() {
     return (
       <div className="Home">
-        <Header />
         <div className="wrapper">
           <Filter filter={this.filter} change={this.change} />
           <Listing
@@ -106,7 +103,6 @@ class Home extends Component {
             globalState={this.state}
           />
         </div>
-        <Footer />
       </div>
     );
   }
