@@ -1,5 +1,6 @@
 import React from "react";
-import Listing from "./Listing";
+import Listing from "../listing/Listing";
+import "./listings.styles.scss";
 
 const Listings = props => {
   return (

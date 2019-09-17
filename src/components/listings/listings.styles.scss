@@ -1,0 +1,135 @@
+#listings {
+  width: 100%;
+  padding: 30px 40px;
+  font-family: "Roboto", sans-serif;
+  overflow: auto;
+}
+
+.listing-header {
+  display: flex;
+  justify-content: space-between;
+  input[type="text"] {
+    border: none;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+    width: 60%;
+    font-size: 25px;
+    &:focus {
+      outline: none;
+    }
+  }
+  .icons {
+    align-self: center;
+    .fas {
+      padding: 5px;
+      font-size: 25px;
+      cursor: pointer;
+    }
+  }
+}
+
+.list-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  padding-top: 20px;
+}
+
+.list-items-active {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  padding-top: 20px;
+}
+
+.active-view {
+  color: #0b8457;
+}
+
+.item {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  .image {
+    width: 100%;
+  }
+  .about {
+    padding: 5px;
+    .price {
+      display: inline-block;
+      width: 130px;
+    }
+    .style {
+      display: inline-block;
+    }
+    .location {
+      display: inline-block;
+      width: 130px;
+    }
+    .bedrooms {
+      display: inline-block;
+    }
+    .favorite {
+      float: right;
+    }
+    .fas {
+      padding: 5px;
+    }
+    .far {
+      padding: 5px;
+    }
+    span {
+      text-transform: capitalize;
+    }
+  }
+  .modal-button {
+    cursor: pointer;
+    width: 100%;
+    padding: 5px;
+    background-color: #222831;
+    color: white;
+    border: none;
+  }
+}
+//modal styles
+.styles_modal__gNwvD {
+  width: 50%;
+}
+
+//slider styles
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black !important;
+}
+
+@media (max-width: 1400px) {
+  .list-items {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1100px) {
+  .list-items-active {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .list-items {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .list-items {
+    grid-template-columns: 1fr;
+  }
+  .styles_modal__gNwvD {
+    width: 100%;
+  }
+}

@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import "normalize.css/normalize.css";
 import "../App.scss";
 import JSON from "../data.json";
-import Filter from "./Filter";
-import Listing from "./listings/Listings";
+import Filter from "../components/filter/Filter";
+import Listing from "../components/listings/Listings";
 
 class Home extends Component {
   constructor() {

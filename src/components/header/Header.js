@@ -1,17 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./header.styles.scss";
 
 const Header = () => {
   return (
     <nav id="nav">
       <div className="logo">
-        <h1>Logo</h1>
+        <h1>Real Estate</h1>
       </div>
       <ul>
         <Link to="/" className="nav-link" exact="true">
           Home
         </Link>
-        <Link to="/about" className="nav-link" exact="true">
+        <Link to="/" className="nav-link" exact="true">
           About Us
         </Link>
         <Link to="/" className="nav-link" exact="true">

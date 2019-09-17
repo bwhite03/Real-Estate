@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Modal from "react-responsive-modal";
 import Slider from "react-slick";
+import "./listing.styles.scss";
 
 class Listing extends Component {
   state = {
